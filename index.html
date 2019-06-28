@@ -4,29 +4,47 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon_32-32.png">
         <link href="https://fonts.googleapis.com/css?family=Advent+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/reset.css">
         <link rel="stylesheet" href="assets/css/styles.css">
-        <title>gif Generator</title>
+        <title>GIF Generator</title>
     </head>
     <body>
-        <div id="pageContent">
-            <header></header>
+        <div id="activityContent">
+            <header>
+                <div class="titleHolder">
+                    <h1>GIF Generator</h1>
+                    <img id="giphyAttr" src="assets/images/Poweredby_640px-Black_VertLogo.png" alt="Powered by GIPHY">
+                </div>
+                <p id="instructions">Press the buttons to search for animal GIFs. You can add your own buttons to create custom searches. Each search will return 10 GIFs but you can press the 'Get More' button after the initial search to return additional GIFs in that category.</p>
+            </header>
             <main>
                 <div id="buttonHolder"></div>
                 <form>
-                    <label for="newButton">New Button</label>
+                    <label for="newButton">Create your own GIF categories: </label>
                     <input type="text" id="newButton">
-                    <input id="createNew" type="submit">
+                    <input id="createNew" type="submit" value="Add">
                 </form>
                 <div id="addMoreHolder"></div>
-                <div id="allGifsHolder"></div>
-                <div id="favoritesHolder"></div>
+                <div class="alignRight">
+                    <div id="favLabel" data-toggle="closed">
+                        <h2>Favorites</h2>
+                        <img id="favToggle" src="assets/images/expandFavs.svg" alt="expand section arrow">
+                    </div>
+                </div>
+                <div id="allGifsHolder">
+                    <div id="favoritesHolder" class="displayNone">
+                        <p id="emptyMessage">Nothing to display. Add favorite GIFs from your searches to view them here.</p>
+                    </div>
+                    <div id="resultGifs"></div>
+                </div>
             </main>
-            <footer></footer>
         </div>
+        <footer>
+            <p>Created by Lexi Winstanley</p>
+            <p>June 2019</p>
+        </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script type="text/javascript" src="assets/javascript/gifs.js"></script>
     </body>
