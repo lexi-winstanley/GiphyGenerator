@@ -230,3 +230,90 @@ h2 {
 .fullWidth {
     width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+    #instructions {
+        width: 100%;
+    }
+    .gifHolder {
+        width: 25%;
+    }
+    .favoriteGif {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .gifHolder {
+        width: 33%;
+    }
+    .favoriteGif {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .gifHolder {
+        width: 50%;
+    }
+    .favoriteGif {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .gifHolder {
+        width: 100%;
+    }
+    .favoriteGif {
+        width: 100%;
+    }
+    .alignRight {
+        margin-top: .5rem;
+    }
+    .titleHolder {
+        flex-direction: column;
+        align-items: center;
+    }
+    #giphyAttr {
+        width: 50%;
+        height: auto;
+        margin-top: .5rem;
+    }
+    #addMoreHolder {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 255px) {
+    #buttonHolder {
+        text-align: center;
+    }
+    #newButton {
+        margin: .25rem 0 0 0;
+    }
+    #createNew {
+        margin: .25rem auto;
+    }
+    .alignRight {
+        margin-top: 1rem;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    #favLabel {
+        justify-content: center;
+        width: 100%;
+    }
+    label {
+        text-align: center;
+        margin-top: .5rem;
+    }
+    #instructions {
+        text-align: center;
+    }
+    footer p {
+        text-align: center;
+    }
+}
