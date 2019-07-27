@@ -1,4 +1,4 @@
-# GIF Generator
+# Giphy Generator
 
 ## Description
 
