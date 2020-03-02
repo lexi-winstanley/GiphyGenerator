@@ -9,4 +9,4 @@ Press the buttons to search for animal GIFs. You can add your own buttons to cre
 ## Technical Approach
 Logic was written to capture user text input to create new buttons that can then be clicked (click event listeners) to call the Giphy API with the search query. A response is received from the Giphy API and the JSON data is used to display the GIFs on the page. If the API call is not successful, an error is shown. 
 
-## https://lexi-winstanley.github.io/GiphyGenerator/
+## https://lexi-winstanley.github.io/giphyGenerator/
